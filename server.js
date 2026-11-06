@@ -22,7 +22,7 @@ app.use(express.json());
 app.use(
   cors({
     origin: [
-      'https://comforting-eclair-b146ae.netlify.app',
+      'https://seasystem.netlify.app',
       'http://localhost:5173',
     ],
   })
