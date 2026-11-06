@@ -19,7 +19,14 @@ const app = express();
 
 // Middleware
 app.use(express.json());
-app.use(cors());
+app.use(
+  cors({
+    origin: [
+      'https://comforting-eclair-b146ae.netlify.app',
+      'http://localhost:5173',
+    ],
+  })
+);
 
 // Get __dirname in ES modules
 const __dirname = path.resolve();
